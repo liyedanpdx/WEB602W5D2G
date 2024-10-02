@@ -32,10 +32,15 @@ const app = new Vue({
     },
     methods:{
         hover_effect: function(hover_state){
-            if (hover_state){
-                this.$set(this.stylebtn, 'backgroundColor', 'red');
-            }else{
-                this.$set(this.stylebtn, 'backgroundColor', '#4CAF50');
+            // if (hover_state){
+            //     this.$set(this.stylebtn, 'backgroundColor', 'red');
+            // }else{
+            //     this.$set(this.stylebtn, 'backgroundColor', '#4CAF50');
+            // }
+            if (hover_state) {
+                this.stylebtn['background-color'] = 'red';
+            } else {
+                this.stylebtn['background-color'] = '#4CAF50';
             }
         }
     }    
